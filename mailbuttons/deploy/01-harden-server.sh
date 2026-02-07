@@ -44,7 +44,7 @@ echo "==> Hardening SSH configuration..."
 sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication no/' /etc/ssh/sshd_config
 sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin prohibit-password/' /etc/ssh/sshd_config
 sed -i 's/^#\?ChallengeResponseAuthentication.*/ChallengeResponseAuthentication no/' /etc/ssh/sshd_config
-systemctl restart sshd
+systemctl restart ssh.service
 
 echo "==> Configuring firewall (ufw)..."
 apt-get update -qq
