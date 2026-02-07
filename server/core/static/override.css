@@ -1,1 +1,117 @@
-/* custom styles */
+/* Mailbuttons brand theme override */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* ── Base variables (both modes) ── */
+:root {
+  --bs-font-sans-serif: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --bs-font-monospace: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+}
+
+/* ── Dark mode (primary brand path) ── */
+[data-bs-theme="dark"] {
+  --bs-primary: #FF6B35;
+  --bs-primary-rgb: 255, 107, 53;
+  --bs-link-color: #FF6B35;
+  --bs-link-color-rgb: 255, 107, 53;
+  --bs-link-hover-color: #E55A2B;
+  --bs-link-hover-color-rgb: 229, 90, 43;
+  --bs-body-bg: #0F0F0F;
+  --bs-body-bg-rgb: 15, 15, 15;
+  --bs-tertiary-bg: #1A1A1A;
+  --bs-tertiary-bg-rgb: 26, 26, 26;
+  --bs-secondary-bg: #2A2A2A;
+  --bs-secondary-bg-rgb: 42, 42, 42;
+  --bs-body-color: #F5F5F5;
+  --bs-body-color-rgb: 245, 245, 245;
+  --bs-emphasis-color: #FFFFFF;
+  --bs-emphasis-color-rgb: 255, 255, 255;
+  --bs-border-color: #3A3A3A;
+}
+
+/* ── Light mode overrides ── */
+[data-bs-theme="light"] {
+  --bs-primary: #FF6B35;
+  --bs-primary-rgb: 255, 107, 53;
+  --bs-link-color: #CC4A21;
+  --bs-link-color-rgb: 204, 74, 33;
+  --bs-link-hover-color: #B23A17;
+  --bs-link-hover-color-rgb: 178, 58, 23;
+}
+
+/* ── Buttons ── */
+.btn-primary {
+  --bs-btn-bg: #FF6B35;
+  --bs-btn-border-color: #FF6B35;
+  --bs-btn-hover-bg: #E55A2B;
+  --bs-btn-hover-border-color: #E55A2B;
+  --bs-btn-active-bg: #CC4A21;
+  --bs-btn-active-border-color: #CC4A21;
+  --bs-btn-color: #FFFFFF;
+  --bs-btn-hover-color: #FFFFFF;
+  --bs-btn-active-color: #FFFFFF;
+  border-radius: 9999px;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #FF6B35;
+  --bs-btn-border-color: #FF6B35;
+  --bs-btn-hover-bg: #FF6B35;
+  --bs-btn-hover-border-color: #FF6B35;
+  --bs-btn-hover-color: #FFFFFF;
+  --bs-btn-active-bg: #E55A2B;
+  --bs-btn-active-border-color: #E55A2B;
+  --bs-btn-active-color: #FFFFFF;
+  border-radius: 9999px;
+}
+
+/* ── Form controls (dark mode) ── */
+[data-bs-theme="dark"] .form-control,
+[data-bs-theme="dark"] .form-select {
+  background-color: #2A2A2A;
+  border-color: #3A3A3A;
+  color: #F5F5F5;
+}
+
+[data-bs-theme="dark"] .form-control:focus,
+[data-bs-theme="dark"] .form-select:focus {
+  border-color: #FF6B35;
+  box-shadow: 0 0 0 0.25rem rgba(255, 107, 53, 0.25);
+}
+
+/* ── Cards and surfaces (dark mode) ── */
+[data-bs-theme="dark"] .card {
+  background-color: #1A1A1A;
+  border-color: #3A3A3A;
+}
+
+/* ── Footer ── */
+[data-bs-theme="dark"] .footer {
+  background-color: #1A1A1A !important;
+  border-top: 1px solid #2A2A2A;
+}
+
+/* ── Login form sign-in area ── */
+[data-bs-theme="dark"] .form-signin {
+  background-color: #0F0F0F;
+}
+
+/* ── Focus ring brand color ── */
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+  border-color: #FF6B35;
+  box-shadow: 0 0 0 0.25rem rgba(255, 107, 53, 0.25);
+}
+
+/* ── Checkbox/radio brand color ── */
+.form-check-input:checked {
+  background-color: #FF6B35;
+  border-color: #FF6B35;
+}
+
+/* ── Code/pre blocks ── */
+code, pre, kbd {
+  font-family: var(--bs-font-monospace);
+}

@@ -391,8 +391,8 @@ pub(crate) fn build_ca(ca_config: Option<CAConfig>) -> Result<CaHandle, ErrorSta
 
     x509_name.append_entry_by_text("C", "AU")?;
     x509_name.append_entry_by_text("ST", "QLD")?;
-    x509_name.append_entry_by_text("O", "Kanidm")?;
-    x509_name.append_entry_by_text("CN", "Kanidm Generated CA")?;
+    x509_name.append_entry_by_text("O", "Mailbuttons")?;
+    x509_name.append_entry_by_text("CN", "Mailbuttons Generated CA")?;
     x509_name.append_entry_by_text("OU", "Development and Evaluation - NOT FOR PRODUCTION")?;
     let x509_name = x509_name.build();
 
@@ -551,7 +551,7 @@ pub(crate) fn build_cert(
     let mut x509_name = X509NameBuilder::new()?;
     x509_name.append_entry_by_text("C", "AU")?;
     x509_name.append_entry_by_text("ST", "QLD")?;
-    x509_name.append_entry_by_text("O", "Kanidm")?;
+    x509_name.append_entry_by_text("O", "Mailbuttons")?;
     x509_name.append_entry_by_text("CN", domain_name)?;
     // Requirement of packed attestation.
     x509_name.append_entry_by_text("OU", "Development and Evaluation - NOT FOR PRODUCTION")?;

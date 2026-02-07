@@ -127,15 +127,15 @@ pub fn manifest_data(host_req: Option<&str>, domain_display_name: String) -> Man
     };
 
     Manifest {
-        short_name: "Kanidm".to_string(),
+        short_name: "Mailbuttons".to_string(),
         name: domain_display_name,
         start_url,
         display_mode: DisplayMode::MinimalUi,
         description: None,
         orientation: None,
         lang: Some("en".to_string()),
-        theme_color: "white".to_string(),
-        background_color: "white".to_string(),
+        theme_color: "#0F0F0F".to_string(),
+        background_color: "#0F0F0F".to_string(),
         direction: Direction::Auto,
         scope: None,
         prefer_related_applications: None,

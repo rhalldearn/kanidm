@@ -43,7 +43,7 @@ impl Modify for SecurityAddon {
             )
         )
     ),
-    external_docs(url = "https://kanidm.com/docs", description = "Kanidm documentation page"),
+    external_docs(url = "https://mailbuttons.com/docs", description = "Mailbuttons documentation page"),
 
     paths(
         super::generic::status,
@@ -322,14 +322,14 @@ impl Modify for SecurityAddon {
     ),
     modifiers(&SecurityAddon),
     tags(
-        (name = "kanidm", description = "Kanidm API")
+        (name = "mailbuttons", description = "Mailbuttons API")
     ),
     info(
-        title = "Kanidm",
-        description = "API for interacting with the Kanidm system. This is a work in progress.",
+        title = "Mailbuttons",
+        description = "API for interacting with the Mailbuttons identity system.",
         contact( // <https://docs.rs/utoipa-gen/3.5.0/utoipa_gen/derive.OpenApi.html#info-attribute-syntax>
-            name="Kanidm Github",
-            url="https://github.com/kanidm/kanidm",
+            name="Mailbuttons",
+            url="https://mailbuttons.com",
         )
     )
 )]
