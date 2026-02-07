@@ -1,0 +1,16 @@
+version = "2"
+
+bindaddress = "[::]:8443"
+db_path = "/data/kanidm.db"
+tls_chain = "/data/chain.pem"
+tls_key = "/data/key.pem"
+domain = "auth.mailbuttons.com"
+origin = "https://auth.mailbuttons.com"
+log_level = "info"
+db_fs_type = "other"
+trust_x_forward_for = true
+
+[online_backup]
+path = "/data/backups/"
+schedule = "00 03 * * *"
+versions = 7
